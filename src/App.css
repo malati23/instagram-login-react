@@ -1,38 +1,120 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-card {
+  width: 350px;
+  padding: 30px 25px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #515bd4,
+    #8134af,
+    #dd2a7b,
+    #f58529
+  );
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.insta-logo {
+  font-family: cursive;
+  font-size: 40px;
+  margin-bottom: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 40px;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #0095f6;
+  border: none;
+  border-radius: 6px;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.or {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.or span {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.or p {
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.fb-login {
+  font-weight: bold;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.forgot {
+  font-size: 12px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.signup {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.signup b {
+  cursor: pointer;
+}
+
+.error {
+  color: #ffe1e1;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
